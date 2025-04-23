@@ -4,7 +4,7 @@ const app = express();
 
 const allowedOrigins = [
     'http://localhost:5500',
-    'https://glistening-concha-639ad9.netlify.app'
+    'https://roaring-cuchufli-792895.netlify.app/'
 ];
 
 app.use(cors({
