@@ -14,6 +14,13 @@ Features for Admin Login :
 Team Members and their Contribution  :  
 1) Boreddy Sri Sai Abhinav Reddy - Frontend development for student login and student registration.
 2) Tavva Dinesh Reddy - Database development and Frontend development for admin panel.
-3) Pathri Vidya Praveen - Backend development
+3) Pathri Vidya Praveen - Backend development  '
+
+Tech Stack Used for building this project: (MERN Stack)  
+
+1) Frontend - HTML,CSS, Vanilla Javascript , ReactJS
+2) Backend - NodeJS , ExpressJS
+3) Database - MongoDB
+
 
 
