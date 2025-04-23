@@ -11,4 +11,9 @@ Features for Admin Login :
 1) Check the names and roll numbers of registered students.
 2) Start the process of mess registration
 
+Team Members and their Contribution  :  
+1) Boreddy Sri Sai Abhinav Reddy - Frontend development for student login and student registration.
+2) Tavva Dinesh Reddy - Database development and Frontend development for admin panel.
+3) Pathri Vidya Praveen - Backend development
+
 
