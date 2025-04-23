@@ -118,7 +118,14 @@ Frontend Files Overview:
      A nice photo of the IITH mess.  
 
    • iithmess.jpeg  
-     A Ghibli-style version of iithmess.jpg.  
+     A Ghibli-style version of iithmess.jpg.
+5) js folder:
+   • this folder constitutes of react js and vanilla js files
+   • react js files are:
+   admin_dashboard.js,admin_deploy.js,registered_students.js,student_dashboard.js,student_registration.js
+   this files used fetches which goes to backend files and takes the neccesary data such as mess details , id ,password
+   • vanilla js files are:
+   login.js,menu_Admin.js,menu_student.js,script_admin.js,script_student.js these files are used for just displaying some stuff dynamically no fetches are used here 
 
 ---------------------------------------------------------------------------------------------------------
 Backend deployment using Render :  
