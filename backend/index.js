@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 
 const allowedOrigins = [
-    'http://localhost:5500',
+  
     'https://roaring-cuchufli-792895.netlify.app/'
 ];
 
