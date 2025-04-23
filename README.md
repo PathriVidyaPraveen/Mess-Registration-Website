@@ -42,6 +42,14 @@ High Level Overview of Backend files and their functions :
 3) backend_deploy_mess_registration.js is the backend file that handles the API request for floating mess registration by the admin so that if the request is sent , then all the students in the database - their previous mess is updated with current mess and current mess is replaced by empty string.
 4) backend_current_mess_registration.js is the backend file that handles API request of student mess registration. Frontend sends the email , password and the mess that student wanted to register to. Then this file first checks whether the mess admin floated mess registration or not. If mess admin did not start registration , then it returns message of mess cannot be registered. If it started , then according to databse , currently assuming the maximum limit of mess to be 250 , if the registered students for a mess that the student request for assigning is exceeding the maximum limit , he is assigned the other mess. (Number of students in database < 500). If there is a vacancy in the mess that the student wanted , he will be assigned for that mess. So finally returns the assigned mess after making these validations.
 
+
+High level overview of database files :  
+1) students_data.json is the JSON documents file present in MongoDB atlas cluster for students data.
+2) admin_data.json is the JSON documents file present in MongoDB Atlas Cluster for admins data.
+
+High level overview of Frontend files :  
+
+
 Backend deployment using Render :  
 
 https://mess-app-backend-hcin.onrender.com
