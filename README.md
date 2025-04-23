@@ -22,5 +22,21 @@ Tech Stack Used for building this project: (MERN Stack)
 2) Backend - NodeJS , ExpressJS
 3) Database - MongoDB
 
+Setting Up Backend :  
+1) Install NodeJS annd npm onto the machine. In Ubuntu terminal , run the following command.
+   sudo apt update
+   sudo apt install nodejs npm
+2) After installations , check the versions.
+   node -v
+   npm -v
+3) Now , we need to install ExpressJS
+   npm install express
+4) Next , we need to install cors.
+   npm install cors
+5) Finally , we need to install MongoDB.
+   npm install mongodb
+
+   
+
 
 
