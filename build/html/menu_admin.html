@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mess Menu</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Mess Menu</h2>
+    <a href="#" id="backLink">← Back to Dashboard</a>
+  </div>
+
+  <div class="main">
+    <div class="welcome-box">🍽️ Today’s Menu</div>
+
+    <div class="info-box">
+      <label for="daySelect">Select Day:</label>
+      <select id="daySelect">
+        <option value="Sunday">Sunday</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+      </select>
+    </div>
+
+    <div id="menuDisplay" class="info-box">
+      <!-- Menu content will be inserted here -->
+    </div>
+  </div>
+
+  <script src="../js/menu_admin.js"></script>
+</body>
+</html>

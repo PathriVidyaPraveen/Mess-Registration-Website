@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
 
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="menu_admin.html" onclick="localStorage.setItem('userType', 'admin')">Mess Menu</a>
+        <a href="registered_students.html">Registered Students</a>
+        <a href="../index.html">Logout</a>
+    </div>
+    <div class="main">
+        <div class="welcome-box">WELCOME ADMIN</div>
+        <!-- TO be added  -->
+        <div class="info-box">
+            Total number of students registered for <span id="mess_name"></span> are <span id="student_num"></span>
+        </div>
+        <div class="info-box" id ='root'>
+            Float registration form: 
+            <button id="reset" class="button">
+                Reset
+            </button>
+
+        </div>
+
+        
+    </div>
+    <script src="../js/script_admin.js"></script>
+
+    <script type="text/babel" src="../js/admin_deploy.js"></script>
+</body>
+</html>

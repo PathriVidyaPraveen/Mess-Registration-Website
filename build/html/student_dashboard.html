@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="menu_student.html" onclick="localStorage.setItem('userType', 'student')">Mess Menu</a>
+        <a href="registration.html">Mess Registration</a>
+        <a href="https://forms.gle/PcHwf6BAwAd9ZVJo9" target="_blank">Mess Rebate</a>
+        <a href="swap.html">Mess Swap</a>
+        <a href="../index.html">Logout</a>
+    </div>
+    <div class="main">
+        <div class="welcome-box">WELCOME TO DASHBOARD</div>
+
+        <!-- Mess Menu Box -->
+        <div id="messMenuBox" class="info-box" style="display: none;">
+            <h3>Today's Menu</h3>
+            <p>Breakfast: Idli & Sambar<br>Lunch: Rajma Chawal<br>Dinner: Paneer Butter Masala with Roti</p>
+        </div>
+
+        <div class="info-container">
+            <div class="info-box">
+                <h3>Mess A</h3>
+                <p>Mess A offers a North Indian menu with variety and spice. Special meals available on weekends. Hygienic and tasty!  for any queries please contact email:messaskpl@iith.ac.in</p>
+            </div>
+            <div class="info-box">
+                <h3>Mess B</h3>
+                <p>Mess B is known for its South Indian delights and healthy food options. Clean and efficient service every day  for any queries please contact email:messbfoodsutra@iith.ac.in.</p>
+            </div>
+            <div class="info-box" id="profileBox">
+                <h3>PROFILE</h3>
+                <p><strong>Name:</strong> <span id="profileName">Loading....</span></p>
+                <p><strong>Roll Number:</strong> <span id="profileRoll">Loading...</span></p>
+                <p><strong>Email:</strong> <span id="profileEmail">Loading...</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script_student.js"></script>
+</body>
+</html>
