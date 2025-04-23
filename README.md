@@ -57,15 +57,43 @@ overview of database files :
 2) admin_data.json is the JSON documents file present in MongoDB Atlas Cluster for admins data.
 ---------------------------------------------------------------------------------------------------------
 overview of Frontend files :  
-1)a main "index.html" file allows you to go to main login page and then we should go to admin page through this only
-2)some html files additonally for static changes like showning mess menu and changing page to another page
-3)js files contains both react and vanilla js files we used to dynamic changes in the websites
-4)fetch requests are kept in react js files to send requests to backend which sends a response and respective things are shown accordingly
-5)
+1)index.html:Likely the entry point or landing page of the site. May include role selection (Admin/Student) or redirect logic based on login type.
+2)html folder:
+	•	admin_dashboard.html
+The main dashboard view for administrators. Likely includes links to manage mess registrations, view stats, etc.
+	•	admin_login.html
+Login interface specifically for administrators to access their dashboard.
+	•	menu_admin.html
+Page where admin can view mess menus for different days or messes.
+	•	menu_student.html
+Page where students can view the mess menu (read-only version compared to admin’s).
+	•	registered_students.html
+Displays a list of students who have completed registration. Possibly includes filters or sorting features.
+	•	registration.html
+The main mess registration page where students choose their mess preferences.
+Includes:
+	1)	Current month registration
+	2)	Past registrations
+	3)	Active “Register Now” button only at the end of the month
+	4)	Options like MessA, MessB
+	•	student_dashboard.html
+The student’s main dashboard page after logging in. Likely shows registration status, menu view, rebate, swap options, etc.
+	•	swap.html
+A page to allow students to request a mess swap with another student (functionality may include search, submit, etc.).
+3)css folder:
+Contains all the stylesheets for the website.
+	•	student_details.css
+Likely used to style the page that shows student information (possibly registered_students.html).
+	•	style.css
+Probably the global stylesheet that controls layout, color themes, fonts, etc. across multiple pages.
+	•	styles.css
+Appears to be an additional or alternative stylesheet. You might want to check if it’s being used anywhere to avoid redundancy with style.css.
+4) images:
+   *iithmess.jpg : a nice photo of iith mess
+   *iithmess.jpeg: a ghibli version of iithmess.jpg
 
 ---------------------------------------------------------------------------------------------------------
 Backend deployment using Render :  
-
 https://mess-app-backend-hcin.onrender.com
 
 ---------------------------------------------------------------------------------------------------------
@@ -81,7 +109,8 @@ Future improvements that can be made for this project:
 4) Handling everything in single front end files instead of writing multiple files for fast website.
 5) Mess Entry using QR Code based scanning and making the limit to 1 for breakfast , lunch aand dinner.
 6) Handling multiple mess registration requests at a time using timestamps.
-7) to write react in jsx files and not use babel scripts 
+7) to write react in jsx files and not use babel scripts
+8) mess rebate and swap should be handled by this page only not some google form etc.
 
    
 
