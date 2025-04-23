@@ -53,6 +53,13 @@ https://roaring-cuchufli-792895.netlify.app/
 
 
 Future improvements that can be made for this project:  
+1) Mess Feedback option
+2) Responsiveness to mobile phones for making it easy to mess entry
+3) Security improvements for database.
+4) Handling everything in single front end files instead of writing multiple files for fast website.
+5) Mess Entry using QR Code based scanning and making the limit to 1 for breakfast , lunch aand dinner.
+6) Handling multiple mess registration requests at a time using timestamps.
+
 
    
 
