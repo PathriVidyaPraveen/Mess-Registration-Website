@@ -56,55 +56,69 @@ overview of database files :
 1) students_data.json is the JSON documents file present in MongoDB atlas cluster for students data.
 2) admin_data.json is the JSON documents file present in MongoDB Atlas Cluster for admins data.
 ---------------------------------------------------------------------------------------------------------
-overview of Frontend files :  
-1)index.html
-  Likely the entry point or landing page of the site. May include role selection (Admin/Student) or redirect logic based on login type.
-2)html folder:
-	•	admin_dashboard.html
-The main dashboard view for administrators. Likely includes links to manage mess registrations, view stats, etc.
+Frontend Files Overview:
 
-	•	admin_login.html
-Login interface specifically for administrators to access their dashboard.
+1) index.html  
+   Likely the entry point or landing page of the site.  
+   May include role selection (Admin/Student) or redirect logic based on login type.  
 
-	•	menu_admin.html
-Page where admin can view mess menus for different days or messes.
+2) html folder:  
 
-	•	menu_student.html
-Page where students can view the mess menu (read-only version compared to admin’s).
+   • admin_dashboard.html  
+     The main dashboard view for administrators.  
+     Likely includes links to manage mess registrations, view stats, etc.  
 
-	•	registered_students.html
-Displays a list of students who have completed registration. Possibly includes filters or sorting features.
+   • admin_login.html  
+     Login interface specifically for administrators to access their dashboard.  
 
-	•	registration.html
-The main mess registration page where students choose their mess preferences.
-Includes:
-	1)	Current month registration
-	2)	Past registrations
-	3)	Active “Register Now” button only at the end of the month
-	4)	Options like MessA, MessB
- 
-	•	student_dashboard.html
-The student’s main dashboard page after logging in. Likely shows registration status, menu view, rebate, swap options, etc.
+   • menu_admin.html  
+     Page where admin can view mess menus for different days or messes.  
 
-	•	swap.html
-A page to allow students to request a mess swap with another student (functionality may include search, submit, etc.).
+   • menu_student.html  
+     Page where students can view the mess menu (read-only version compared to admin’s).  
 
-3)css folder:
-Contains all the stylesheets for the website.
+   • registered_students.html  
+     Displays a list of students who have completed registration.  
+     Possibly includes filters or sorting features.  
 
-	•	student_details.css
-Likely used to style the page that shows student information (possibly registered_students.html).
+   • registration.html  
+     The main mess registration page where students choose their mess preferences.  
+     Includes:  
+     1) Current month registration  
+     2) Past registrations  
+     3) Active “Register Now” button only at the end of the month  
+     4) Options like MessA, MessB  
 
-	•	style.css
-Probably the global stylesheet that controls layout, color themes, fonts, etc. across multiple pages.
+   • student_dashboard.html  
+     The student’s main dashboard page after logging in.  
+     Likely shows registration status, menu view, rebate, swap options, etc.  
 
-	•	styles.css
-Appears to be an additional or alternative stylesheet. You might want to check if it’s being used anywhere to avoid redundancy with style.css.
+   • swap.html  
+     A page to allow students to request a mess swap with another student.  
+     Functionality may include search, submit, etc.  
 
-4) images:
-   
-   *iithmess.jpg : a nice photo of iith mess
-   *iithmess.jpeg: a ghibli version of iithmess.jpg
+3) css folder:  
+   Contains all the stylesheets for the website.  
+
+   • student_details.css  
+     Likely used to style the page that shows student information  
+     (possibly registered_students.html).  
+
+   • style.css  
+     Probably the global stylesheet that controls layout, color themes, fonts, etc.  
+     across multiple pages.  
+
+   • styles.css  
+     Appears to be an additional or alternative stylesheet.  
+     You might want to check if it’s being used anywhere to avoid redundancy with style.css.  
+
+4) images folder:  
+
+   • iithmess.jpg  
+     A nice photo of the IITH mess.  
+
+   • iithmess.jpeg  
+     A Ghibli-style version of iithmess.jpg.  
 
 ---------------------------------------------------------------------------------------------------------
 Backend deployment using Render :  
