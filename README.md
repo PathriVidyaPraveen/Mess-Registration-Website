@@ -123,22 +123,60 @@ Frontend Files Overview:
 
    • This folder consists of both React JS and Vanilla JS files.  
 
-   • React JS files:  
-     - admin_dashboard.js  
-     - admin_deploy.js  
-     - registered_students.js  
-     - student_dashboard.js  
-     - student_registration.js  
+ React JS Files:
+- admin_dashboard.js:
+  • Captures email and password inputs from the admin  
+  • Sends login credentials to the backend API  
+  • Stores user data in localStorage on successful login  
+  • Redirects to admin_dashboard.html upon success  
+  • Shows validation error alerts for missing inputs or failed login attempts  
 
-     These files use `fetch` to interact with backend APIs.  
-     They retrieve necessary data such as mess details, user IDs, and passwords.  
+- admin_deploy.js:
+  • Allows admins to update the mess details for students  
+  • Sends a POST request to the /deploy endpoint to update the mess information  
 
-   • Vanilla JS files:  
-     - login.js  
-     - menu_admin.js  
-     - menu_student.js  
-     - script_admin.js  
-     - script_student.js  
+- registered_students.js:
+  • Dynamically fetches and displays a list of registered students  
+  • Retrieves studentDetails from localStorage  
+  • Creates a table with student names and roll numbers  
+  • Displays a fallback message if no students are found  
+
+- student_dashboard.js:
+  • Provides a login form for students to access their dashboard  
+  • Captures and validates email/password inputs  
+  • Sends login credentials to the /student/login API  
+  • Stores student information (mess history, name, roll number) in localStorage  
+  • Redirects to student_dashboard.html on successful login  
+  • Includes links for password reset and admin login  
+
+- student_registration.js:
+  • Enables students to register for a mess  
+  • Displays current and previous mess details from localStorage  
+  • Allows mess selection from a dropdown and sends the selected mess to the /api/current-mess endpoint  
+  • Updates localStorage and UI upon successful registration  
+
+ Vanilla JS Files:
+- login.js:
+  • Validates email and password input fields  
+  • Displays alerts for missing input fields  
+  • Shows a success alert if validation passes  
+
+- menu_admin.js:
+  • Displays breakfast, lunch, and dinner menu items for admins  
+  • Automatically shows today's menu on page load  
+  • Updates the menu display when the day is changed from a dropdown  
+
+- menu_student.js:
+  • Similar to menu_admin.js, but designed for students to view their mess menu  
+
+- script_admin.js:
+  • Displays admin mess details (name and student count) from localStorage  
+  • Dynamically updates corresponding elements on the admin page  
+  • Shows fallback values if data is missing  
+
+- script_student.js:
+  • Displays student details such as name, email, and roll number on the student dashboard
+        
 
      These files are used to handle dynamic behavior on the frontend.  
      They do not use `fetch` calls and are primarily for UI interactions and DOM manipulation.  
