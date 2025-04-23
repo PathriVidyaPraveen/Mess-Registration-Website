@@ -6,6 +6,7 @@ Features for Student Login :
 2) Mess Registrattion along with profile view of theire current mess and previous mess
 3) Mess Rebate Form opening
 4) Mess Swap option
+   
 Features for Admin Login :
 1) Check the names and roll numbers of registered students.
 2) Start the process of mess registration
