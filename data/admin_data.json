@@ -1,0 +1,16 @@
+[
+    {
+    "name" : "Aditya Kumar",
+    "mess" : "MESS-A",
+    "position": "Admin",
+    "email" : "aditya@cse.iith.ac.in",
+    "passwd": "aditya95"
+},
+{
+    "name": "Saurabh",
+    "mess": "MESS-B",
+    "position": "Admin",
+    "email" : "saurabh@ph.iith.ac.in",
+    "passwd": "saurabhep06"
+}
+]
